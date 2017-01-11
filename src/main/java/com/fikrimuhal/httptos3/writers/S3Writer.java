@@ -50,6 +50,7 @@ public class S3Writer extends AbstractWriter {
             }
             PutObjectRequest putObjectRequest = new PutObjectRequest(bucketName, uploadKey, in, metaData);
             PutObjectResult putObjectResult = amazonS3Client.putObject(putObjectRequest);
+            logger.info("File saved to bucket " + bucketName + " on path " + uploadKey);
             logger.info("MD5 = " + putObjectResult.getContentMd5());
         } catch (AmazonServiceException ase) {
             logger.severe("Error Message:    " + ase.getMessage());
