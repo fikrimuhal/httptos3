@@ -7,6 +7,25 @@
     <groupId>com.fikrimuhal.httptos3</groupId>
     <artifactId>httptos3</artifactId>
     <version>1.0</version>
+    <packaging>jar</packaging>
+
+    <name>HTTP to Amazon S3</name>
+    <description>A library for direct streaming from HTTP to Amazon S3</description>
+    <url>https://github.com/fikrimuhal/httptos3</url>
+
+    <issueManagement>
+        <url>https://github.com/fikrimuhal/httptos3/issues</url>
+        <system>GitHub Issues</system>
+    </issueManagement>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
     <dependencies>
         <dependency>
             <groupId>com.amazonaws</groupId>
